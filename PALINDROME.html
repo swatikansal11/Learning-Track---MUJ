@@ -1,0 +1,21 @@
+<SCRIPT>
+var n,rem,rev,temp;
+n=prompt("ENTER THE NUMBER");
+n=parseInt(n);
+temp=n;
+rev=0;
+rem=0;
+while(n>0){
+rem=parseInt(n%10);
+rev=parseInt((rev*10)+rem);
+n=parseInt(n/10);
+}
+if(temp==rev)
+{
+alert("THE NUMBER IS PALINDROME");
+}
+else
+{
+alert("THE NUMBER IS NOT PALINDROME");
+}
+</script>
