@@ -1,0 +1,16 @@
+<script>
+var rev,rem,temp,n;
+rem=0;
+rev=0;
+n=prompt("ENTER THE NUMBER");
+n=parseInt(n);
+temp=n;
+while(n>0)
+{
+rem=parseInt(n%10);
+rev=parseInt((rev*10)+rem);
+n=parseInt(n/10);
+}
+document.write("ORIGINAL NUMBER IS "+temp+" REVERSED NUMBER IS "+rev);
+</script>
+</script>
