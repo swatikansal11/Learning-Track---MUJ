@@ -1,0 +1,42 @@
+<html><head><script language="javascript">
+function result()
+{
+var bsal,ansal,nsal,gsal,hra,da,ta,ca,pf,lic,name;
+var name=document.forms['myform']['name'].value;
+bsal=document.forms['myform']['bs'].value;
+hra=0.1*bsal;
+da=0.5*bsal;
+ca=0.08*bsal;
+ta=0.09*bsal;
+pf=0.12*bsal;
+lic=0.15*bsal;
+bsal=parseInt(bsal);
+hra=parseInt(hra);
+da=parseInt(da);
+ca=parseInt(ca);
+ta=parseInt(ta);
+pf=parseInt(pf);
+lic=parseInt(lic);
+gsal=parseInt(gsal);
+ansal=parseInt(ansal);
+nsal=parseInt(nsal);
+gsal=bsal+hra+ta+ca+da;
+nsal=gsal-(pf+lic);
+ansal=nsal*12;
+
+document.write("NAME OF THE EMPLOYEE IS = "+name+"<BR>");
+document.write(" BASIC SALARY IS = "+bsal+"<br>");
+document.write(" ANNUAL SALARY IS = "+ansal+"<br>");
+}
+</script></head><body>
+<form name="myform">
+Enter the name:<input type="text"name="name"><br>
+Enter the basic salary<input type="text"name="bs">
+<br>
+
+<input type="reset"value="RESET THE FORM"><BR>
+<input type="submit"value="SUBMIT"onclick="result()">
+</form></body>
+</html>
+
+
