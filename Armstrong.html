@@ -1,0 +1,22 @@
+<script>
+var n,rem,temp,csum;
+n=prompt("ENTER THE NUMBER");
+n=parseInt(n);
+rem=0;
+temp=n;
+csum=0;
+while(n>0)
+{
+rem=parseInt(n%10);
+csum=parseInt(csum+(rem*rem*rem));
+n=parseInt(n/10);
+}
+if(temp==csum)
+{
+alert("THE NUMBER IS ARMSTRONG");
+}
+else
+{
+alert("THE NUMBER IS NOT ARMSTRONG");
+}
+</script>
